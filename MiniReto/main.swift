@@ -8,6 +8,11 @@
 
 import Foundation
 
+//:Mini Reto Por Arturo Barreto Villafan
+
+
+
+
 var serie = 0...100
 var pares:[Int] = []
 var impares:[Int] = []
@@ -19,23 +24,18 @@ for numero in serie{
         divisible.append(numero)
         
     }
-        
-    else if numero % 2 == 0{
+    
+    if numero % 2 == 0{
         pares.append(numero)
     }
-    else if numero % 2 == 1{
+    if numero % 2 == 1{
         impares.append(numero)
     }
     
-    switch numero{
-        
-        
-    case 30...40:
+    if numero >= 30 && numero <= 40{
         rango.append(numero)
-        break;
-    default:
-        break;
     }
+    
     
     
 }
